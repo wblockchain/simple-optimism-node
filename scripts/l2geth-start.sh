@@ -18,8 +18,4 @@ exec geth \
   --unlock=$BLOCK_SIGNER_ADDRESS \
   --mine \
   --miner.etherbase=$BLOCK_SIGNER_ADDRESS \
-  --metrics \
-  --metrics.influxdb \
-  --metrics.influxdb.endpoint=http://influxdb:8086 \
-  --metrics.influxdb.database=l2geth \
   $@
